@@ -1,0 +1,177 @@
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.close-bubbles{
+    display: none;
+}
+
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+
+}
+@keyframes animate{
+    0%{
+        transform: translateY(70vh) scale(0);
+    }100%{
+        transform: translateY(-15vh) scale(0.5);
+    }
+
+}
+
+
+
+
+main.darkMode {
+    background-color: $color-black-1;
+    // HEADER
+    header {
+        .sidebarmini {
+            .sidebar__button {
+                background-color: $color-red-1;
+                color: $color-black-1;
+            }
+            .sidebar__content {
+                background-color: $color-red-1;
+                color: $color-black-1;
+            }
+        }
+    }
+
+    // INFO
+    .inFo {
+        .row {
+            .info-left {
+                h3 {
+                    color: $color-white;
+                }
+                p {
+                    color: $color-white;
+                }
+
+                .name-animate {
+                    span {
+                        &::after {
+                            background: $color-black-1;
+                            border-left-color: $color-red-1;
+                        }
+                    }
+                }
+                button {
+                    background-color: $color-white;
+                }
+                button.CV {
+                    background-color: $color-red-1;
+                    a {
+                        color: $color-black-1;
+                    }
+                }
+
+                .list-contact {
+                    button {
+                        border-color: $color-black-1;
+                        a {
+                            color: $color-black-1;
+                        }
+                        &:hover {
+                            background-color: $color-red-1;
+                            a {
+                                color: $color-white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info-right {
+                .information-person {
+                    .home-town {
+                        .item {
+                            p:first-child,p:last-child{
+                                color:$color-white;
+                            }
+                            p:nth-child(2){
+                                color:$color-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // TIMELINE
+    .timeLine{
+        h3{
+            color: $color-white;
+        }
+        .row-timeLine{
+            .listItem-timeLine{
+                .item-time{
+                    &.active {
+                        span.text-year {
+                            color: $color-red-1;
+                        }
+                        button{
+                            background-color: $color-red-1;
+                        }
+                      
+                    }
+    
+                    &.active::before{
+                        background-color: $color-red-1;
+                    }
+                }
+                
+            }
+            .timeLine-content{
+                background-color: $color-red-1;
+            }
+        }
+    }
+
+
+    // PRODUCT
+    .product{
+        h3{
+            color:$color-white
+        }
+    }
+
+    // Footer
+    footer{
+        background-color: $color-black-4;
+        color: $color-white;
+
+        .footer-right{
+        
+            a{
+            transition: all .5s;
+             &:hover{
+                color:$color-red-1
+             }
+            }
+         }
+    }
+}

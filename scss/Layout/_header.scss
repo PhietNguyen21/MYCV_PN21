@@ -1,0 +1,108 @@
+
+
+main {
+    background:$color-violet;
+    // height: 1000px;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        .header-left {
+            padding-left: 2rem;
+            background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            font-size: 190px;
+            p {
+                font-size: 2rem;
+                color: $color-violet;
+                margin-bottom: 0;
+            }
+        }
+
+        .sidebarmini {
+            position: fixed;
+            top: 4%;
+            right: 0;
+            transform: translateX(100%);
+            transition: all .5s;
+            z-index: 20;
+            .sidebar__button {
+                background-color: $color-black-3;
+                color: $color-white;
+                border: none;
+                padding: 0.4rem 0.8rem;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                position: fixed;
+                transform: translateX(-100%);
+                i {
+                    font-size: 1.6rem;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .sidebar__content {
+                background-color: $color-black-3;
+                color: $color-white;
+                text-align: center;
+                h2 {
+                    font-size: 1.2rem;
+                }
+                .switch {
+                    position: relative;
+                    cursor: pointer;
+                    input {
+                        width: 40px;
+                        &:checked + .slider {
+                            &::before {
+                                transform: translateX(18px);
+                            }
+                        }
+                    }
+                    .slider {
+                        width: 40px;
+                        background-color: $color-white;
+                        border: 2px solid $color-black-1;
+                        border-radius: 34px;
+                        position: absolute;
+                        height: 100%;
+                        top: 0;
+                        right: 0;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            display: inline-block;
+                            width: 20px;
+                            height: 100%;
+                            background-color: $color-black-1;
+                            border-radius: 10px;
+                            top: 0;
+                            left: -0.5px;
+                            transition: all 0.5s ease;
+                        }
+                    }
+                }
+            }
+            &.is-opened {
+                transform: translateX(0%);
+            }
+        }
+    }
+}
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}

@@ -1,0 +1,206 @@
+.item-box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+
+}
+
+.close-box{
+    display: none;
+}
+.box div:nth-child(1){
+    top: 12%;
+    left: 42%;
+    animation: animateBG 10s linear infinite;
+}
+
+.box div:nth-child(2){
+    top: 70%;
+    left: 92%;
+    animation: animateBG 7s linear infinite;
+}
+
+.box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: animateBG 9s linear infinite;
+}   
+
+.box div:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation: animateBG 10s linear infinite;
+}   
+
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animateBG 6s linear infinite;
+}   
+
+.box div:nth-child(6){
+    top: 80%;
+    left: 85%;
+    animation: animateBG 12s linear infinite;
+}   
+
+.box div:nth-child(7){
+    top: 20%;
+    left: 90%;
+    animation: animateBG 15s linear infinite;
+}   
+
+.box div:nth-child(8){
+    top: 23%;
+    left: 25%;
+    animation: animateBG 16s linear infinite;
+}  
+
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animateBG 9s linear infinite;
+}   
+
+.box div:nth-child(10){
+    top: 50%;
+    left: 25%;
+    animation: animateBG 5s linear infinite;
+}   
+
+.box1 div:nth-child(1){
+    top: 105%;
+    left: 19%;
+    animation: animateBG 10s linear infinite;
+}
+
+.box1 div:nth-child(2){
+    top: 98%;
+    left: 45%;
+    animation: animateBG 7s linear infinite;
+}
+
+.box1 div:nth-child(3){
+    top: 110%;
+    left: 10%;
+    animation: animateBG 9s linear infinite;
+}   
+
+.box1 div:nth-child(4){
+    top: 123%;
+    left: 60%;
+    animation: animateBG 10s linear infinite;
+}   
+
+.box1 div:nth-child(5){
+    top: 134%;
+    left: 90%;
+    animation: animateBG 6s linear infinite;
+}   
+
+.box1 div:nth-child(6){
+    top: 145%;
+    left: 70%;
+    animation: animateBG 12s linear infinite;
+}   
+
+.box1 div:nth-child(7){
+    top: 126%;
+    left: 80%;
+    animation: animateBG 15s linear infinite;
+}   
+
+.box1 div:nth-child(8){
+    top: 115%;
+    left: 25%;
+    animation: animateBG 16s linear infinite;
+}  
+
+.box1 div:nth-child(9){
+    top: 138%;
+    left: 25%;
+    animation: animateBG 9s linear infinite;
+}   
+
+.box1 div:nth-child(10){
+    top: 124%;
+    left: 80%;
+    animation: animateBG 5s linear infinite;
+}   
+
+.box2 div:nth-child(1){
+    top: 180%;
+    left: 41%;
+    animation: animateBG 10s linear infinite;
+}
+
+.box2 div:nth-child(2){
+    top: 187%;
+    left: 66%;
+    animation: animateBG 7s linear infinite;
+}
+
+.box2 div:nth-child(3){
+    top: 182%;
+    left: 9%;
+    animation: animateBG 9s linear infinite;
+}   
+
+.box2 div:nth-child(4){
+    top: 184%;
+    left: 59%;
+    animation: animateBG 10s linear infinite;
+}   
+
+.box2 div:nth-child(5){
+    top: 185%;
+    left: 17%;
+    animation: animateBG 6s linear infinite;
+}   
+
+.box2 div:nth-child(6){
+    top: 186%;
+    left: 70%;
+    animation: animateBG 12s linear infinite;
+}   
+
+.box2 div:nth-child(7){
+    top: 170%;
+    left: 80%;
+    animation: animateBG 15s linear infinite;
+}   
+
+.box2 div:nth-child(8){
+    top: 175%;
+    left: 20%;
+    animation: animateBG 16s linear infinite;
+}  
+
+.box2 div:nth-child(9){
+    top: 179%;
+    left: 37%;
+    animation: animateBG 9s linear infinite;
+}   
+
+.box2 div:nth-child(10){
+    // top: 219%;
+    left: 86%;
+    animation: animateBG 5s linear infinite;
+}   
+
+
+
+
+
+@keyframes animateBG{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+
+    }100%{
+        transform: scale(1.3) translateY(-70px) rotate(360deg);
+        opacity: 0;
+    }
+}

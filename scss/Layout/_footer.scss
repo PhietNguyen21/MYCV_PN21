@@ -1,0 +1,26 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-black-3;
+    padding: 2rem;
+    color: $color-white;
+    margin-top: 2rem;
+    .footer-left{
+        span{
+            font-size: 1.4rem;
+        }
+    }
+    .footer-right{
+        
+       a{
+        color: $color-white;
+        &:hover{
+            color:$color-black-1;
+        }
+        i{
+            padding: 0 1rem;
+            font-size: 1.6rem;
+        }
+       }
+    }
+}
